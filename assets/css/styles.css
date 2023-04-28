@@ -93,6 +93,11 @@ img {
   margin-inline: auto;
   padding-inline: 0.75rem;
 }
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
 /*=============== HEADER & NAV ===============*/
 .header {
   position: fixed;
@@ -126,9 +131,67 @@ img {
 }
 
 /*=============== HOME ===============*/
+.home {
+  background-image: url(../img/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-block: 6rem 2rem;
+}
 
+.home__container {
+  grid-template-columns: 4fr 8fr;
+  align-items: center;
+}
+
+.home__title {
+  font-size: var(--big-font-size);
+  text-transform: uppercase;
+}
+
+.home__description {
+  margin-block: 1.25rem 1.5rem;
+}
 /*=============== BUTTON ===============*/
-
+.btn {
+  display: inline-block;
+  background-color: var(--first-color);
+  color: var(--title-color);
+  padding: 1rem 1.5rem;
+  text-transform: capitalize;
+  border-radius: 0.25rem;
+  font-weight: var(--weight-500);
+  position: relative;
+  transition: var(--transition);
+  cursor: pointer;
+}
+.btn::before {
+  content: "Contact Us";
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  color: var(--first-color);
+  background: var(--first-color);
+  background: linear-gradient(176deg, var(--first-color) 55%, rgba(3,1,41,1) 75%);
+  transition: all 1s ease-in-out;
+}
+.btn:hover {
+  color: var(--first-color);
+}
+.btn:hover::before {
+  opacity: 1;
+  visibility: visible;
+  width: 100%;  
+  height: 100%;
+  color: #fff;
+}
 /*=============== BRAND ===============*/
 
 /*=============== ANIME ===============*/
