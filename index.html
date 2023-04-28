@@ -1,58 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--=============== FONT AWESOME ===============-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--=============== SWIPER CSS ===============-->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-    />
+  <!--=============== FONT AWESOME ===============-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
-    <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="assets/css/styles.css" />
+  <!--=============== SWIPER CSS ===============-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
-    <title>Anime</title>
-  </head>
-  <body>
-    <!--==================== HEADER ====================-->
-    <header class="header" id="header"></header>
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="assets/css/styles.css" />
 
-    <!--==================== MAIN ====================-->
-    <main class="main">
-      <!--==================== HOME ====================-->
-      <section class="home"></section>
+  <title>Anime</title>
+</head>
 
-      <!--==================== BRAND ====================-->
-      <section class="brand"></section>
+<body>
+  <!--==================== HEADER ====================-->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#" class="nav__logo">
+        <img src="./assets/img/logo.png" alt="logo" class="nav__logo-img">
 
-      <!--==================== SPECIAL ANIME ====================-->
-      <section class="special__anime container section"></section>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link active-link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Online</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Our Process</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Plans</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </a>
+    </nav>
+  </header>
 
-      <!--==================== SUBSCRIPTION ====================-->
-      <section class="subscription"></section>
+  <!--==================== MAIN ====================-->
+  <main class="main">
+    <!--==================== HOME ====================-->
+    <section class="home"></section>
 
-      <!--==================== POPULAR ANIME ====================-->
-      <section class="popular__anime container section"></section>
+    <!--==================== BRAND ====================-->
+    <section class="brand"></section>
 
-      <!--==================== TRENDING ANIME ====================-->
-      <section class="trending__anime section"></section>
-    </main>
+    <!--==================== SPECIAL ANIME ====================-->
+    <section class="special__anime container section"></section>
 
-    <!--==================== FOOTER ====================-->
-    <footer class="footer"></footer>
+    <!--==================== SUBSCRIPTION ====================-->
+    <section class="subscription"></section>
 
-    <!--=============== SWIPER JS ===============-->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!--==================== POPULAR ANIME ====================-->
+    <section class="popular__anime container section"></section>
 
-    <!--=============== MAIN JS ===============-->
-    <script src="assets/js/main.js"></script>
-  </body>
+    <!--==================== TRENDING ANIME ====================-->
+    <section class="trending__anime section"></section>
+  </main>
+
+  <!--==================== FOOTER ====================-->
+  <footer class="footer"></footer>
+
+  <!--=============== SWIPER JS ===============-->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <!--=============== MAIN JS ===============-->
+  <script src="assets/js/main.js"></script>
+</body>
+
 </html>
