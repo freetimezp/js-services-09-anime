@@ -307,7 +307,9 @@ img {
   margin-block: 1.25rem 1.5rem;
 }
 /*=============== TRENDING ANIME ===============*/
-
+.trending__anime {
+  background-color: var(--container-color-light);
+}
 /*=============== FOOTER ===============*/
 
 /*=============== BREAKPOINTS ===============*/
